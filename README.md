@@ -7,6 +7,7 @@ https://www.baeldung.com/intro-to-querydsl
 https://www.baeldung.com/querydsl-with-jpa-tutorial
 
 
+How to send list of string values in AWS RDS data api library for java
 
 To send a list of string values using the AWS RDS Data API library for Java, you can follow these steps:
 
