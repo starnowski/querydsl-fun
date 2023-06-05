@@ -15,7 +15,7 @@ import java.util.UUID;
 @Accessors(chain = true)
 @Table(name = "user_info")
 @NoArgsConstructor
-@EqualsAndHashCode(of = "userId")
+@EqualsAndHashCode(of = "id")
 public class User {
 
     @Id
@@ -24,8 +24,6 @@ public class User {
 
     private String login;
 
-    private Boolean disabled;
-
     @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "user")
-    private Set<Post> blogPosts = new HashSet<>(0);
+    private Set<Post> posts = new HashSet<>(0);
 }
